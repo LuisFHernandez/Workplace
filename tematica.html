@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Intervención por temáticas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+      </style>
+</head>
+
+<body>
+    <header>   
+        <div class="caja"> 
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Timer</a></li> 
+                    <li><a href="tematica.html">Por temática</a></li>
+                    <li><a href="borrador.html">Borrador maltrato infantil</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+        
+<body>
+  <h1>Intervención por temáticas</h1>
+  <select id="lista">
+    <option value="opcion1">ADOLESCENTE REBELDE</option>
+    <option value="opcion2">VIOLENCIA DE GÉNERO</option>
+    <option value="opcion3">PAREJA - CELOS</option>
+    <option value="opcion4">Opción 4</option>
+    <option value="opcion5">Opción 5</option>
+    <option value="opcion6">Opción 6</option>
+  </select>
+  <br><br>
+  <textarea id="descripcion" rows="37" cols="115" ></textarea>
+  <script>
+    document.getElementById("lista").onchange = function() {
+      if (this.value == "opcion1") {
+        document.getElementById("descripcion").innerHTML = " Focalizar \n ¿Cuantos años tiene usted? \n ¿Cuantos años tiene su hij@? \n ¿Desde cuando se comporta así?\n ¿Quiénes viven en casa? \n ¿Que hay sobre el papá/mamá?\n Dimensionar \n Validar emociones con respecto al desgaste emocional, estrés que implica el cuidado del hij@ \n Replantear \n ¿Lo que busca abordar en la llamada/lo que podemos abordar en la llamada si gusta es: hablar sobre ciertos conceptos e ideas que nos ayudarán a abordar la situación, y así implementar regla y limites en casa con su hij@. \n Alternativas previas \n ¿Reglas y limites en casa? \n Deconstruir conceptos \n Aún es responsabilidad de ella. Ella la adulto es la estructura.  \n No es posible soltar dicha responsabilidad. \n Equilibrio entre disciplina y afecto. \n Consecuencias: no castigo \n Equipo como padres. \n 3 reglas: Evitar dañar/romper cosas, lastimar a los demás, lastimarse a si mism@. \n Síndrome del niño rey \n Etapa de adolescencia: quiere tomar decisiones, afirmar su autonomia, se permite errores lógicos, razonables. \n Nuevas alternativas \n Implementar limites y reglas en casa, será un proceso \n Autocuidado \n Consecuencias \n Lista de consecuencias \n Referencia institucional \n DIF \n Agencia 59 (De haber violencia)  \n Desglose del plan \n Recursos \n Anticipación de consecuencias (evaluar escenarios) \n Recapitulación \n Retroalimentación \n Estadísticos \n Difusión y cierre";
+      } else if (this.value == "opcion2") {
+        document.getElementById("descripcion").innerHTML = "Focalizar \n  ¿Cuantos años tiene usted? \n ¿Desde cuando ocurre dicha violencia?  \n ¿Qué tipo de violencia ocurre  \n ¿Quiénes viven en casa? \n Dimensionar \n Replantear \n ¿Como lo ha vivido? \n Validar emociones: Es entendible que usted se sienta así, debido a haber vivido situaciones de violencia, y ello tiene consecuencias \n Alternativas previas \n ¿Ha denunciado previamente/ solicitado medidas de protección? \n ¿Lo ha compartido con alguien de su confianza? \n Deconstruir conceptos \n Ley de acceso de las mujeres \n Modalidades y tipos de violencia  \n Violencia creciente y 3 fases. \n Normalización de la violencia \n La otra persona es la única responsable de la violencia \n Culpabilización como parte de la violencia psicoemocional \n Las consecuencias que haya será parte de la \n responsabilidad que la otra persona tendrá que asumir \n ¿La situación es saludable, sostenible? \n Denuncia, medidas de protección \n Factores que le detienen: economico, afecto, apego.  \n Nuevas alternativas: acudir a at psicol, denunciar, medidas, recurrir a redes de apoyo.   \n Referencia institucional \n CENTRO DE JUSTICIA PARA LAS MUJERES. \n SECRETARIA DE LAS MUJERES. \n Desglose del plan: crear ruta para acudir a CJM. Resguardarse de ser necesario, a la brevedad. \n Recursos: intención de recuperarse y estar bien. \n Anticipación de consecuencias (evaluar escenarios): \n Proceso que implica esfuerzo, cambios a corto plazo, pero beneficios a corto, mediano y largo plazo.  \n Recapitulación: Para recapitular y antes de concluir, le considero valorar las opciones que hemos hablado, priorizar en salir de una situación de violencia, así como resolver todas las dudas que vayan surgiendo, para que usted cuente con todas las opciones y alternativas posibles, que le permitirán tomar la mejor desición.  \n Retroalimentación: ¿Qué rescata usted de esta llamada?¿Qué piensa hacer despúes de lo que hemos conversado? \n Estadísticos - Difusión y cierre";
+      } else if (this.value == "opcion3") {
+        document.getElementById("descripcion").innerHTML = "Descripción de la opción 3";
+      } else if (this.value == "opcion4") {
+        document.getElementById("descripcion").innerHTML = "Descripción de la opción 4";
+      } else if (this.value == "opcion5") {
+        document.getElementById("descripcion").innerHTML = "Descripción de la opción 5";
+      } else if (this.value == "opcion6") {
+        document.getElementById("descripcion").innerHTML = "Descripción de la opción 6";
+      }
+    };
+  </script>
+</body>
+</html>

@@ -8,9 +8,21 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
       </style>
 <body>
-    
-    <p> <a href="https://edomex.gob.mx/atencion_ciudadana">Página de inicio de servicios de Gobierno del Estado de México</a>.
-</p>
+<textarea id="textarea">This is some text that can be copied</textarea>
+<button onclick="copyText()">Copy</button>
+
+<script>
+function copyText() {
+  // Get the textarea element
+  const textarea = document.getElementById('textarea');
+
+  // Select the text inside the textarea
+  textarea.select();
+
+  // Copy the text
+  document.execCommand('copy');
+}
+</script>
     
     <textarea name="board" id="board" cols="100" rows="28"
          </textarea>

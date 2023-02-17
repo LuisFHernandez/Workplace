@@ -8,32 +8,26 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
       </style>
 <body>
-<textarea id="textarea">VIOLENCIA DE GÉNERO. MODALIDAD: POR PARTE DE VIOLENCIA (DE TIPO) LA USUARIA OTORGA CONSENTIMIENTO INFORMADO DE SEGUIMIENTO. </textarea>
-<button onclick="copyText()">Copy</button>
+  <textarea id="textarea1">VIOLENCIA DE GÉNERO. MODALIDAD: POR PARTE DE -- VIOLENCIA (DE TIPO) -- LA USUARIA OTORGA CONSENTIMIENTO INFORMADO DE SEGUIMIENTO.</textarea>
+  <button onclick="copyToClipboard('textarea1')">Copy to Clipboard</button>
 
-<script>
-function copyText() {
-  // Get the textarea element
-  const textarea = document.getElementById('textarea');
-
-  // Select the text inside the textarea
-  textarea.select();
-
-  // Copy the text
-  document.execCommand('copy');
-}
-</script>
+  <script>
+    function copyToClipboard(textareaId) {
+      const textarea = document.getElementById(textareaId);
+      textarea.select();
+      document.execCommand("copy");
+    }
+  </script>  
     
-    <textarea name="board" id="board" cols="100" rows="28"
-         </textarea>
           <div class="caja"> 
                 <nav>
                     <ul>
-                        <li><a href="index.html">Timer</a></li> 
-                        <li><a href="tematica.html">Por temática</a></li>
-                        <li><a href="plantillas.html">Plantillas</a></li>
-                        <li><a href="enlaces.html">Enlaces de importancia</a></li>
-                        <li><a href="borrador.html">Borrador maltrato infantil</a></li>
+                    <li><a href="index.html">Timer</a></li> 
+                    <li><a href="tematica.html">Por temática</a></li>
+                    <li><a href="plantillas.html">Plantillas</a></li>
+                    <li><a href="chat.html">Chat</a></li>
+                    <li><a href="enlaces.html">Enlaces de importancia</a></li>
+                    <li><a href="borrador.html">Borrador maltrato infantil</a></li>
                     </ul>
                 </nav>
             </div>

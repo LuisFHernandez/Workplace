@@ -1,0 +1,51 @@
+.contenedor-cajas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .caja {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    /* height: auto; //--> 
+    resize: none; */
+
+  }
+  .caja input {
+    width: 400px;
+    grid-row: 3;
+  }  
+  .caja label {
+    margin-right: 10px;
+  }
+  
+  #crear-nota {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  #contenedor-nota {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #nota {
+    margin: 10px;
+    font-size: 16px;
+    white-space: pre-line;
+  }
+  
+  #copiar-nota {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+  }
+  

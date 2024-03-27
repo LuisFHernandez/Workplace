@@ -13,15 +13,16 @@
         <div class="contenedor-cajas">
             <div class="caja">
               <label for="focalizar">Focalizar:</label>
-              <input type="text" id="focalizar" name="focalizar" cols= "100" rows="80"/><br>
+              <textarea id="focalizar" name="focalizar" rows="4" cols="50"></textarea><br>
+          <!-- <input type="text" id="focalizar" name="focalizar" cols= "100" rows="80"/><br> */ -->
             </div>
             <div class="caja">
               <label for="deconstruir">Deconstruir conceptos:</label>
-              <input type="text" id="deconstruir" name="deconstruir" rows="3"/><br>
+              <textarea id="deconstruir" name="deconstruir" rows="4" cols="50"></textarea><br>
             </div>
             <div class="caja">
               <label for="alternativas">Nuevas alternativas:</label>
-              <input type="text" id="alternativas" name="alternativas" rows="3"/><br>
+              <textarea id="alternativas" name="alternativas" rows="4" cols="50"></textarea><br>
             </div>
           </div>
           <button id="crear-nota">Crear nota</button>
@@ -29,6 +30,25 @@
             <p id="nota"></p>
             <button id="copiar-nota">COPIAR</button>
           </div> 
+
+
+          <form>
+            <input type="checkbox" id="etiqueta_telefonica" name="etiqueta_telefonica">
+            <label for="etiqueta_telefonica">ETIQUETA TELEFONICA</label><br>
+        
+            <input type="checkbox" id="pad" name="pad">
+            <label for="pad">PAD</label><br>
+        
+            <input type="checkbox" id="procesos_permanentes" name="procesos_permanentes">
+            <label for="procesos_permanentes">PROCESOS PERMANENTES: Escucha activa, Empatía, Contención emocional</label><br>
+        
+            <input type="checkbox" id="ejes_transversales" name="ejes_transversales">
+            <label for="ejes_transversales">EJES TRANSVERSALES: Derechos humanos, Perspectiva de género, Diversidad Sexual</label><br>
+        
+            <input type="checkbox" id="conocimientos_disciplina" name="conocimientos_disciplina">
+            <label for="conocimientos_disciplina">CONOCIMIENTOS DE LA DISCIPLINA</label><br>
+        
+        </form>
 
     <div class="caja"> 
             <nav>
@@ -45,7 +65,7 @@
         </div>
       
                   <footer>
-            <p class="copyright">&copy LFHM Design - 2023</p>
+            <p class="copyright">&copy LFHM Design - 2024</p>
         </footer>
         <script type="text/javascript" src="script_nota.js"></script>
         </body>

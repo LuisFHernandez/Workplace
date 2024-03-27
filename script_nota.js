@@ -7,9 +7,9 @@ const btnCopiarNota = document.getElementById("copiar-nota");
 
 btnCrearNota.addEventListener("click", () => {
   let nota = "";
-  nota += `SE COMUNICA DEBIDO: ${txtFocalizar.value}\n`;
-  nota += `SE ABORDA: ${txtDeconstruir.value}\n`;
-  nota += `SE CANALIZA A: ${txtAlternativas.value}\n`;
+  nota += `SE COMUNICA DEBIDO A ${txtFocalizar.value}\n`;
+  nota += `SE ABORDA  ${txtDeconstruir.value}\n`;
+  nota += `SE CANALIZA A  ${txtAlternativas.value}\n`;
   txtNota.textContent = nota;
 });
 

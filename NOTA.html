@@ -1,5 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
+  <style>
+    #arrow {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid black;
+        animation: arrowMovement 1800s linear infinite; /* Ajusta el tiempo total aquí */
+    }
+
+    @keyframes arrowMovement {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(calc(100vw - 309px), calc(100vh - 309px)); /* Ajusta las dimensiones de la ventana */
+        }
+    }
+</style>
+
+<div id="arrow"></div>
+
+<script>
+    // Esto es opcional, pero puedes ajustar el tiempo de animación para que dure 30 minutos exactos.
+    const arrow = document.getElementById('arrow');
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+    const arrowWidth = 309;
+    const arrowHeight = 309;
+    const animationDuration = 1800000; // 30 minutos en milisegundos
+
+    const pixelsPerSecond = Math.sqrt(Math.pow(windowWidth - arrowWidth, 2) + Math.pow(windowHeight - arrowHeight, 2)) / (animationDuration / 1000);
+    const animationTime = ((windowWidth - arrowWidth) / pixelsPerSecond).toFixed(2);
+
+    arrow.style.animationDuration = `${animationTime}s`;
+</script>
+
     <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">

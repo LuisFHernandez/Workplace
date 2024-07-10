@@ -1,51 +1,130 @@
-.contenedor-cajas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .caja {
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    /* height: auto; //--> 
-    resize: none; */
+/* stylenota.css */
 
-  }
-  .caja input {
-    width: 400px;
-    grid-row: 3;
-  }  
-  .caja label {
-    margin-right: 10px;
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+.contenedor-cajas {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+  /* Aumenta el tamaño del checkbox para mejor visibilidad */
+  transform: scale(1.5);
+}
+
+.checkbox-container label {
+  margin-bottom: 0; /* Elimina el margen inferior de las etiquetas */
+  font-weight: normal; /* Cambia el peso de la fuente si es necesario */
+}
+
+.caja {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#contenedor-nota {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ddd;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+#arrow {
+  z-index: 1000;
+}
+
+@media (max-width: 600px) {
+  body {
+      padding: 10px;
   }
   
-  #crear-nota {
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #000;
-    color: #fff;
+  textarea {
+      font-size: 14px;
   }
-  
-  #contenedor-nota {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  #nota {
-    margin: 10px;
-    font-size: 16px;
-    white-space: pre-line;
-  }
-  
-  #copiar-nota {
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #000;
-    color: #fff;
-  }
-  
+}

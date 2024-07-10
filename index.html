@@ -13,13 +13,15 @@
       <body>
         <header>
             </header>
-            <canvas width="20" height="400"></canvas>
+            <div class="contenedor-principal">
+            <div class="timer-container">
+            <canvas id="timerCanvas" width="20" height="400"></canvas>
 
             <script>
-                var pantalla = document.querySelector("canvas");
+                var pantalla = document.querySelector("timerCanvas");
                 var pincel = pantalla.getContext("2d");
                 pincel.fillStyle = "lightgrey";
-                pincel.fillRect(0, 0, 600, 400);
+                pincel.fillRect(0, 0, 20, 400);
             
                 function disenarCircunferencia(x,y,radio){
                     pincel.fillStyle = "blue";
@@ -29,14 +31,15 @@
                 }
             
                 function limpiarPantalla(){
-                    pincel.clearRect(0,0,600,400);
+                    pincel.clearRect(0,0,20,400);
                 }
                 var y = 0
             
                 function actualizarPantalla(){
                     limpiarPantalla();
-                    disenarCircunferencia(10,y,10);
+                    disenarCircunferencia(10,y,5);
                     y++;
+                    if (y > 400) y = 0;
                 }
                 setInterval(actualizarPantalla, 4500);
             
@@ -70,7 +73,8 @@ Anticipación de consecuencias (evaluar escenarios):
 Recapitulación - Retroalimentación: 
 Estadísticos - Difusión y cierre
     </textarea>
-          
+        </div>
+        </div>
           <div class="caja"> 
                 <nav>
                     <ul>
@@ -86,7 +90,7 @@ Estadísticos - Difusión y cierre
             </div>
           
             <footer>
-                <p class="copyright">&copy LFHM Design - 2023</p>
+                <p class="copyright">&copy LFHM Design - 2024</p>
             </footer>
             </body>
             </html>   

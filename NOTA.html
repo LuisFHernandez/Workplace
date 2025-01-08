@@ -27,7 +27,7 @@
 
 <script>
     // Esto es opcional, pero puedes ajustar el tiempo de animación para que dure 30 minutos exactos.
-    const arrow = document.getElementById('arrow');
+   /* const arrow = document.getElementById('arrow'); 
     const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
     const arrowWidth = 309;
@@ -37,7 +37,7 @@
     const pixelsPerSecond = Math.sqrt(Math.pow(windowWidth - arrowWidth, 2) + Math.pow(windowHeight - arrowHeight, 2)) / (animationDuration / 1000);
     const animationTime = ((windowWidth - arrowWidth) / pixelsPerSecond).toFixed(2);
 
-    arrow.style.animationDuration = `${animationTime}s`;
+    arrow.style.animationDuration = `${animationTime}s`; */
 </script>
 
     <head> 
@@ -54,7 +54,6 @@
             <div class="caja">
               <label for="focalizar">Focalizar:</label>
               <textarea id="focalizar" name="focalizar" rows="8" cols="100"></textarea><br>
-          <!-- <input type="text" id="focalizar" name="focalizar" cols= "100" rows="80"/><br> */ -->
             </div>
             <div class="caja">
               <label for="deconstruir">Deconstruir conceptos:</label>
@@ -66,12 +65,14 @@
             </div>
           </div>
           <button id="crear-nota">Crear nota</button>
+          <button id="minusculas">Minúsculas</button>
+          <button id="mayusculas">Mayúsculas</button>
           <div id="contenedor-nota">
             <p id="nota"></p>
             <button id="copiar-nota">COPIAR</button>
           </div> 
 
-
+<!-- 
           <form>
             <div class="checkbox-container">
                 <input type="checkbox" id="etiqueta_telefonica" name="etiqueta_telefonica">
@@ -97,7 +98,7 @@
                 <input type="checkbox" id="conocimientos_disciplina" name="conocimientos_disciplina">
                 <label for="conocimientos_disciplina">CONOCIMIENTOS DE LA DISCIPLINA</label>
             </div>
-        </form>
+        </form> -->
 
     <div class="caja"> 
             <nav>

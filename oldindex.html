@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tools</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+      </style>
+      </head>
+
+      <body>
+        <header>
+            </header>
+            <div class="contenedor-principal">
+            <div class="timer-container">
+            <canvas id="timerCanvas" width="20" height="400"></canvas>
+
+            <script>
+                var pantalla = document.querySelector("timerCanvas");
+                var pincel = pantalla.getContext("2d");
+                pincel.fillStyle = "lightgrey";
+                pincel.fillRect(0, 0, 20, 400);
+            
+                function disenarCircunferencia(x,y,radio){
+                    pincel.fillStyle = "blue";
+                    pincel.beginPath();
+                    pincel.arc(x,y,radio,0,2*Math.PI);
+                    pincel.fill(); 
+                }
+            
+                function limpiarPantalla(){
+                    pincel.clearRect(0,0,20,400);
+                }
+                var y = 0
+            
+                function actualizarPantalla(){
+                    limpiarPantalla();
+                    disenarCircunferencia(10,y,5);
+                    y++;
+                    if (y > 400) y = 0;
+                }
+                setInterval(actualizarPantalla, 4500);
+            
+            </script>  
+    <textarea name="board" id="board" cols="100" rows="28">
+
+Focalizar: 
+
+
+Dimensionar: 
+
+
+
+Replantear: "Lo que usted busca abordar durante esta llamada es --- cierto?
+
+Alternativas previas: 
+
+
+Deconstruir conceptos: 
+
+
+
+Nuevas alternativas: 
+
+
+
+Referencia institucional: 
+Desglose del plan: 
+Recursos: 
+Anticipación de consecuencias (evaluar escenarios): 
+Recapitulación - Retroalimentación: 
+Estadísticos - Difusión y cierre
+    </textarea>
+        </div>
+        </div>
+          <div class="caja"> 
+                <nav>
+                    <ul> 
+                    <li><a href="index.html">CreadorNotas</a></li> 
+                    <li><a href="oldindex.html">Timer</a></li>
+                    <li><a href="tematica.html">Por temática</a></li>
+                    <li><a href="plantillas.html">Plantillas</a></li>
+                    <li><a href="chat.html">Chat</a></li>
+                    <li><a href="enlaces.html">Enlaces de importancia</a></li>
+                    <li><a href="borrador.html">Borrador maltrato infantil</a></li>
+                    </ul>
+                </nav>
+            </div>
+          
+            <footer>
+                <p class="copyright">&copy LFHM Design - 2024</p>
+            </footer>
+            </body>
+            </html>   
